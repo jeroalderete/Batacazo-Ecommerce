@@ -1,0 +1,10 @@
+[
+    {"id": 1, "nombre": "BATA WINTER VOG BLANCA", "tipo": "bata", "cantidad": 1, "desc": "Bata de invierno", "precio": 1200, "talle": "L", "img": "./img/bata1.jpg"},
+    {"id": 2, "nombre": "BATA CORTA ARD KASHMIR", "tipo": "bats", "cantidad": 1, "desc": "Bata de verano", "precio": 1100, "talle": "L", "img": "./img/bata2.jpg"},
+    {"id": 3, "nombre": "BATA LARGA NEGRA", "tipo": "bata", "cantidad": 1, "desc": "Bata de invierno", "precio": 1200, "talle": "M", "img": "./img/bata3.jpg"},
+    {"id": 4, "nombre": "BATA CORTA OBI NEGRA", "tipo": "bata", "cantidad": 1, "desc": "Bata de verano", "precio": 1400, "talle": "M", "img": "./img/bata6.jpg"},
+    {"id": 5, "nombre": "BATA INVERNAL VOGA NEGRA", "tipo": "bata", "cantidad": 1, "desc": "Bata de invierno", "precio": 1200, "talle": "S", "img":"./img/bata4.jpg"},
+    {"id": 6, "nombre": "BATA LARGA RAKHA NEGRA", "tipo": "bata", "cantidad": 1, "desc": "Bata de verano", "precio": 1500, "talle": "S", "img": "./img/bata5.jpg"},
+    {"id": 7, "nombre": "BATA LARGA KARUN NEGRA", "tipo": "bata", "cantidad": 1, "desc": "Bata de verano", "precio": 1500, "talle": "S", "img": "./img/bata1.jpg"},
+    {"id": 8, "nombre": "BATA LARGA REKUNA NEGRA", "tipo": "bata", "cantidad": 1, "desc": "Bata de verano", "precio": 1500, "talle": "S", "img": "./img/bata2.jpg"}
+]

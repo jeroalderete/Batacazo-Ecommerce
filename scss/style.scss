@@ -1,0 +1,184 @@
+/* IMPORTS VARIABLES MIXINS EXTENDS  */
+
+// ABSTRACTS
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/extend";
+@import "abstracts/mediaqueries";
+
+/* PAGES IMPORTS  */
+
+@import "pages/productos";
+@import "pages/contacto";
+
+/* LAYOUT IMPORTS  */
+@import "layout/navbar";
+@import "layout/navbar2";
+@import "layout/footer";
+
+/* BASE IMPORTS  */
+
+@import "base/reset";
+
+// MEDIA QUERIES
+
+
+/* ------------------------------------------------------  */
+/* ------------------------------------------------------  */
+
+// FONTS //
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+
+/* ------------------------------------------------------  */
+/*                   MOBILE FIRST                          */
+/* ------------------------------------------------------  */
+
+
+// ------------------------------------------------------  //
+// INDEX MOBILE PAGE //
+// ------------------------------------------------------  //
+
+// INDEX MAIN HERO SECTION //
+
+main {
+    height: 90%;
+
+    .grid-container {
+        padding-top: 0.5rem;
+        display: grid;
+        grid-template-areas:
+            "main-title"
+            "img-section1"
+            "img-section2"
+            "img-section3"
+            "img-section4"
+            "img-section5"
+            "img-section6"
+            "img-section7"
+            "img-section8"
+            "img-section9";
+        gap: 3rem;
+        padding-bottom: 5rem;
+
+
+        .main-title {
+            grid-area: main-title;
+            @include indexTitle;
+           /*  padding-bottom: 2rem; */
+           padding-top: 5rem;
+
+            text-transform: uppercase;
+
+            h1 {
+                font-size: $title-size3;
+            }
+        }
+
+
+        .img-section1 {
+            grid-area: img-section1;
+        }
+
+        .img-section2 {
+            grid-area: img-section2;
+        }
+
+        .img-section3 {
+            grid-area: img-section3;
+        }
+
+        .img-section4 {
+            grid-area: img-section4;
+        }
+
+        .img-section5 {
+            grid-area: img-section5;
+            display: none;
+        }
+
+        .img-section6 {
+            grid-area: img-section6;
+            display: none;
+        }
+
+        .img-section7 {
+            grid-area: img-section7;
+            display: none;
+        }
+
+        .img-section8 {
+            grid-area: img-section8;
+            display: none;
+        }
+
+        .img-section9 {
+            grid-area: img-section9;
+            display: none;
+        }
+
+
+        .portfolio-img {
+            @include flexcol;
+           
+            a {
+                color: #000;
+                &:hover {
+                    color: green;
+                    cursor: pointer;
+                    transition: .5s ease-in-out;
+                }
+
+                h2 {
+                    text-align: center;
+                    font-family: 'Playfair Display', serif;
+                    font-size: 1rem;
+                    font-weight: 300; 
+                }
+
+                p {
+                    text-align: center;
+                    font-weight: bolder;
+                    font-size: 1rem;
+                }
+            }
+            
+        }
+
+        section {
+            div {
+                border: 0.1rem solid rgba(131, 130, 130, .8);
+                padding: 2rem;
+                margin: 0 2rem;
+
+                .bag {
+                    padding: 0.4rem;
+                    margin: 0.4rem;
+                    border: none;
+
+                }
+
+                img {
+                    width: 75%;
+                    transition: 1.3s;
+
+                    &:hover {
+                        transform: scale(1.03);
+                        z-index: 2;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
